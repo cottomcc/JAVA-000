@@ -76,7 +76,8 @@ java -XX:+UseG1GC -Xms512m -Xmx512m -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:
   - 空间整合
   - 可预测的停顿
 - 过程
-  - Initial Marking ofConcurrent Marking
+  - Initial Marking
+  - Concurrent Marking
   - Final Marking
-  - Live Data Countiing and Evacuation
+  - Live Data Counting and Evacuation
 
