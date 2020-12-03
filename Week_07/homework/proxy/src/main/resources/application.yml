@@ -1,0 +1,25 @@
+
+mybatis:
+  mapperLocations: classpath:/cc/cottom/proxy/mapper/*.xml
+  typeAliasesPackage: cc.cottom.proxy.entities
+  mapperScanPackage: cc.cottom.proxy.mapper
+  configLocation: classpath:/mybatis-config.xml
+
+
+mysql:
+  datasource:
+    #读库数目
+    num: 1
+    type-aliases-package: cc.cottom.proxy.entities
+    mapper-locations: classpath:/mapper/*.xml
+    config-location: classpath:/mybatis-config.xml
+    master:
+      jdbcUrl: jdbc:mysql://localhost:3307/sales?useUnicode=true&characterEncoding=utf-8&useSSL=true
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+    slave:
+      jdbcUrl: jdbc:mysql://localhost:3308/sales?useUnicode=true&characterEncoding=utf-8&useSSL=true
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
